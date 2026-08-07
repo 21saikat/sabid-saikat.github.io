@@ -126,7 +126,6 @@ nav.toplinks a:hover { color: var(--ink); }
   letter-spacing: .05em;
 }
 
-/* Name */
 h1.name {
   font-family: var(--display);
   font-weight: 700;
@@ -151,7 +150,6 @@ h1.name {
   color: var(--accent);
 }
 
-/* Typing role */
 .typing-role {
   font-family: var(--display);
   font-weight: 600;
@@ -536,26 +534,67 @@ h2.section-title {
   overflow: hidden;
   background: var(--surface);
 }
+
 .log-row {
   display: grid;
-  grid-template-columns: 52px 1fr 160px;
-  gap: 14px;
+  grid-template-columns: 48px 1fr 150px;
+  gap: 16px;
   align-items: center;
-  padding: 13px 18px;
+  padding: 16px 18px;
   border-top: 1px solid var(--line);
   transition: background .12s ease;
 }
 .log-row:first-child { border-top: none; }
 .log-row:hover { background: var(--surface-2); }
-.log-id {
+
+.log-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--mono);
-  font-size: 11.5px;
-  color: var(--faint);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  flex-shrink: 0;
+}
+.log-icon.ai {
+  background: rgba(168, 85, 247, 0.15);
+  color: #C084FC;
+}
+.log-icon.k8s {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38BDF8;
+}
+.log-icon.cicd {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ADE80;
+}
+.log-icon.azure {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60A5FA;
+}
+.log-icon.infra {
+  background: rgba(245, 158, 11, 0.15);
+  color: #FBBF24;
+}
+
+.log-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 .log-title {
   font-size: 14.5px;
   font-weight: 500;
   color: var(--ink);
+}
+.log-desc {
+  font-size: 12.5px;
+  color: var(--faint);
+  line-height: 1.4;
 }
 .log-tag {
   font-family: var(--mono);
@@ -581,8 +620,11 @@ h2.section-title {
 }
 
 @media (max-width: 700px) {
-  .log-row { grid-template-columns: 40px 1fr; }
+  .log-row {
+    grid-template-columns: 42px 1fr;
+  }
   .log-tag { display: none; }
+  .log-desc { display: none; }
 }
 
 /* Contact */
