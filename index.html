@@ -5,15 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ibne Sabid Saikat — Cloud &amp; DevOps Engineer</title>
 <meta name="description" content="Ibne Sabid Saikat — Cloud, DevOps &amp; AI/SecOps Engineer. Azure certified, published researcher, 30+ shipped infrastructure and AI projects.">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="topbar">
   <div class="wrap topbar-inner">
     <div class="brand"><span class="dot"></span><b>sabid-saikat.com</b></div>
@@ -29,35 +26,30 @@
 <main class="wrap">
 
   <!-- HERO -->
-  <section class="hero" style="border-bottom:1px solid var(--line);">
+  <section class="hero">
     <div class="hero-top">
       <div class="hero-text">
         <div class="hero-status">
           <span class="dot"></span>
           <span>STATUS: OPEN TO OPPORTUNITIES</span>
         </div>
-
         <h1 class="name">Ibne Sabid&nbsp;Saikat</h1>
-
         <p class="role-line">
           <strong>Cloud, DevOps &amp; AI/SecOps Engineer</strong> — building and shipping cloud-native
           infrastructure, automated pipelines, and AI-assisted operations tooling on Microsoft Azure.
           Azure-certified, published researcher, 30+ projects deployed in public.
         </p>
-
         <div class="hero-actions">
           <a class="btn primary" href="#projects">View deploy log →</a>
           <a class="btn ghost" href="mailto:iibnesabidsaikat4104@gmail.com">Get in touch</a>
           <a class="btn ghost" href="https://github.com/21saikat" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
-
       <div class="hero-photo">
         <img src="microsoft-visit.jpg" alt="Ibne Sabid Saikat at Microsoft">
         <div class="hero-photo-tag"><span class="dot"></span>Microsoft office visit</div>
       </div>
     </div>
-
     <div class="metrics">
       <div class="metric"><div class="num">30+</div><div class="lbl">Projects shipped</div></div>
       <div class="metric"><div class="num">3</div><div class="lbl">Research papers</div></div>
@@ -66,33 +58,33 @@
     </div>
   </section>
 
-  <!-- ABOUT / EDUCATION -->
+  <!-- ABOUT -->
   <section class="reveal">
     <div class="section-head">
       <h2 class="section-title">About</h2>
       <span class="section-tag">// education &amp; recognition</span>
     </div>
-    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:48px;">
+    <div class="about-grid">
       <div>
-        <p style="font-size:15.5px;color:var(--ink);max-width:560px;">
+        <p class="about-text">
           I'm a Computer Science &amp; Engineering graduate focused on cloud infrastructure, DevOps
           automation, and applying AI to operations — from self-healing Kubernetes clusters to
           predictive auto-scaling and alert correlation. I write up most builds publicly and
           share them across YouTube, Medium, and dev.to.
         </p>
       </div>
-      <div style="border-left:1px solid var(--line);padding-left:28px;">
-        <div class="mono-label" style="margin-bottom:8px;">Education</div>
-        <div style="font-weight:600;font-size:15px;margin-bottom:4px;">B.Sc. in Computer Science &amp; Engineering</div>
-        <div style="font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:2px;">CGPA 3.8 / 4.0</div>
-        <div style="font-family:var(--mono);font-size:12px;color:var(--muted);">Completed May 2026</div>
-        <div class="mono-label" style="margin:20px 0 8px;">Recognition</div>
-        <div style="font-weight:500;font-size:14.5px;">Microsoft Student Ambassador</div>
+      <div class="about-side">
+        <div class="mono-label">Education</div>
+        <div class="edu-title">B.Sc. in Computer Science &amp; Engineering</div>
+        <div class="edu-meta">CGPA 3.8 / 4.0</div>
+        <div class="edu-meta">Completed May 2026</div>
+        <div class="mono-label" style="margin-top:20px;">Recognition</div>
+        <div class="edu-title">Microsoft Student Ambassador</div>
       </div>
     </div>
   </section>
 
-  <!-- SNAPSHOTS -->
+  <!-- FIELD NOTES -->
   <section class="reveal">
     <div class="section-head">
       <h2 class="section-title">Field Notes</h2>
@@ -146,7 +138,6 @@
       <h2 class="section-title">Research</h2>
       <span class="section-tag">// published papers</span>
     </div>
-
     <div class="paper">
       <div class="paper-id">01</div>
       <div>
@@ -155,7 +146,6 @@
       </div>
       <a class="paper-link" href="https://www.igi-global.com/chapter/progress-and-obstacles-in-cloud-computing-for-healthcare/374403" target="_blank" rel="noopener">Read paper →</a>
     </div>
-
     <div class="paper">
       <div class="paper-id">02</div>
       <div>
@@ -164,7 +154,6 @@
       </div>
       <a class="paper-link" href="https://dl.acm.org/doi/abs/10.1145/3686166" target="_blank" rel="noopener">Read paper →</a>
     </div>
-
     <div class="paper">
       <div class="paper-id">03</div>
       <div>
@@ -175,39 +164,204 @@
     </div>
   </section>
 
-  <!-- DEPLOY LOG / PROJECTS -->
+  <!-- DEPLOY LOG -->
   <section id="projects" class="reveal">
     <div class="section-head">
       <h2 class="section-title">Deploy Log</h2>
-      <span class="section-tag">// 30+ projects shipped in public</span>
+      <span class="section-tag">// 30 projects shipped in public</span>
     </div>
 
-    <div class="log">
-      <div class="log-row">
+    <div class="log-controls">
+      <button class="filt active" data-filter="all">All</button>
+      <button class="filt" data-filter="ai">AI / MLOps</button>
+      <button class="filt" data-filter="k8s">Kubernetes</button>
+      <button class="filt" data-filter="azure">Azure</button>
+      <button class="filt" data-filter="cicd">CI/CD</button>
+      <button class="filt" data-filter="infra">Infrastructure</button>
+    </div>
+
+    <div class="log" id="project-list">
+
+      <div class="log-row" data-cat="ai k8s">
         <div class="log-id">01</div>
-        <div class="log-title">Self-Healing Kubernetes Cluster (K8s Auto-Healing System w/ AI)</div>
+        <div class="log-title">AI-Powered Kubernetes Self-Healing System</div>
         <div class="log-tag">K3s · Flask · Azure</div>
       </div>
-      <div class="log-row">
+
+      <div class="log-row" data-cat="ai k8s">
         <div class="log-id">02</div>
-        <div class="log-title">Horizontal Pod Autoscaler on Kubernetes</div>
-        <div class="log-tag">K8s · Prometheus</div>
+        <div class="log-title">PredictOps — AI Predictive Auto-Scaling on Kubernetes</div>
+        <div class="log-tag">K8s · AI · Azure</div>
       </div>
-      <div class="log-row">
+
+      <div class="log-row" data-cat="ai">
         <div class="log-id">03</div>
+        <div class="log-title">AlertSense — AI Alert Correlation Engine</div>
+        <div class="log-tag">Python · AI · Monitoring</div>
+      </div>
+
+      <div class="log-row" data-cat="ai">
+        <div class="log-id">04</div>
+        <div class="log-title">AI Meets DevOps — Kubernetes App via Amazon Q (No Code)</div>
+        <div class="log-tag">Amazon Q · K8s</div>
+      </div>
+
+      <div class="log-row" data-cat="ai">
+        <div class="log-id">05</div>
+        <div class="log-title">AI-Driven Predictive Analytics Platform (MLOps)</div>
+        <div class="log-tag">MLOps · Azure · Python</div>
+      </div>
+
+      <div class="log-row" data-cat="ai">
+        <div class="log-id">06</div>
+        <div class="log-title">AI-Powered Resume Analyzer with Azure OpenAI</div>
+        <div class="log-tag">Streamlit · Azure OpenAI</div>
+      </div>
+
+      <div class="log-row" data-cat="ai">
+        <div class="log-id">07</div>
+        <div class="log-title">Real-Time Weather Forecast Bot with Azure OpenAI</div>
+        <div class="log-tag">Python · Azure OpenAI</div>
+      </div>
+
+      <div class="log-row" data-cat="ai">
+        <div class="log-id">08</div>
+        <div class="log-title">AI-Powered Image Analysis Web App</div>
+        <div class="log-tag">Flask · Azure · Python</div>
+      </div>
+
+      <div class="log-row" data-cat="ai">
+        <div class="log-id">09</div>
+        <div class="log-title">Building an AI-Powered Anomaly Detection System</div>
+        <div class="log-tag">AKS · MicroK8s · Azure</div>
+      </div>
+
+      <div class="log-row" data-cat="ai">
+        <div class="log-id">10</div>
+        <div class="log-title">Creating an MCP Server</div>
+        <div class="log-tag">MCP · AI</div>
+      </div>
+
+      <div class="log-row" data-cat="ai">
+        <div class="log-id">11</div>
+        <div class="log-title">AIDevOps-X!</div>
+        <div class="log-tag">AI · DevOps</div>
+      </div>
+
+      <div class="log-row" data-cat="k8s azure">
+        <div class="log-id">12</div>
+        <div class="log-title">CI/CD on Azure VM with Kubernetes, Argo CD &amp; Dashboard</div>
+        <div class="log-tag">Argo CD · K8s · Azure</div>
+      </div>
+
+      <div class="log-row" data-cat="k8s">
+        <div class="log-id">13</div>
+        <div class="log-title">Real-Time Voting App with Grafana, Prometheus &amp; Kubernetes</div>
+        <div class="log-tag">K8s · Prometheus · Grafana</div>
+      </div>
+
+      <div class="log-row" data-cat="k8s">
+        <div class="log-id">14</div>
+        <div class="log-title">Horizontal Pod Autoscaler (HPA) on Kubernetes</div>
+        <div class="log-tag">K8s · HPA</div>
+      </div>
+
+      <div class="log-row" data-cat="k8s azure">
+        <div class="log-id">15</div>
+        <div class="log-title">Build a Microservices App with AKS</div>
+        <div class="log-tag">AKS · Microservices</div>
+      </div>
+
+      <div class="log-row" data-cat="k8s azure">
+        <div class="log-id">16</div>
+        <div class="log-title">Enterprise-Grade App Deployment with Kubernetes, Helm &amp; Linux</div>
+        <div class="log-tag">Helm · K8s · Azure</div>
+      </div>
+
+      <div class="log-row" data-cat="k8s">
+        <div class="log-id">17</div>
+        <div class="log-title">Scalable Reddit Clone on Docker, Kubernetes &amp; Minikube</div>
+        <div class="log-tag">Docker · K8s · Minikube</div>
+      </div>
+
+      <div class="log-row" data-cat="azure cicd">
+        <div class="log-id">18</div>
+        <div class="log-title">DevOps Automation Suite: Jenkins, Docker &amp; K8s on Azure</div>
+        <div class="log-tag">Jenkins · Docker · Azure</div>
+      </div>
+
+      <div class="log-row" data-cat="cicd">
+        <div class="log-id">19</div>
+        <div class="log-title">Real-Time CI/CD Pipeline with Jenkins</div>
+        <div class="log-tag">Jenkins · CI/CD</div>
+      </div>
+
+      <div class="log-row" data-cat="cicd">
+        <div class="log-id">20</div>
+        <div class="log-title">Deploying DevOps Projects without Dockerfile using Buildpacks</div>
+        <div class="log-tag">Buildpacks · CI/CD</div>
+      </div>
+
+      <div class="log-row" data-cat="azure infra">
+        <div class="log-id">21</div>
+        <div class="log-title">Automated Azure Infrastructure with Terraform (Production-Ready)</div>
+        <div class="log-tag">Terraform · Azure</div>
+      </div>
+
+      <div class="log-row" data-cat="azure infra">
+        <div class="log-id">22</div>
+        <div class="log-title">ZeroTouch Azure Deployment</div>
+        <div class="log-tag">Terraform · Azure</div>
+      </div>
+
+      <div class="log-row" data-cat="azure infra">
+        <div class="log-id">23</div>
+        <div class="log-title">Highly Available Web App with Linux, Docker &amp; Nginx LB on Azure</div>
+        <div class="log-tag">Docker · Nginx · Azure</div>
+      </div>
+
+      <div class="log-row" data-cat="azure">
+        <div class="log-id">24</div>
+        <div class="log-title">Static Website Hosting on Azure Blob Storage</div>
+        <div class="log-tag">Azure Blob · Static</div>
+      </div>
+
+      <div class="log-row" data-cat="azure">
+        <div class="log-id">25</div>
+        <div class="log-title">Building and Hosting a Portfolio on Azure App Service</div>
+        <div class="log-tag">Azure App Service</div>
+      </div>
+
+      <div class="log-row" data-cat="azure">
+        <div class="log-id">26</div>
+        <div class="log-title">Serverless API with Azure Functions</div>
+        <div class="log-tag">Azure Functions</div>
+      </div>
+
+      <div class="log-row" data-cat="azure">
+        <div class="log-id">27</div>
+        <div class="log-title">End-to-End Data Solution with Microsoft Fabric</div>
+        <div class="log-tag">Microsoft Fabric</div>
+      </div>
+
+      <div class="log-row" data-cat="azure">
+        <div class="log-id">28</div>
+        <div class="log-title">Azure Activity Log Alerts for Real-Time Monitoring</div>
+        <div class="log-tag">Azure Monitor</div>
+      </div>
+
+      <div class="log-row" data-cat="azure">
+        <div class="log-id">29</div>
+        <div class="log-title">Chatbot built with Microsoft Azure Portal</div>
+        <div class="log-tag">Azure · Chatbot</div>
+      </div>
+
+      <div class="log-row" data-cat="infra">
+        <div class="log-id">30</div>
         <div class="log-title">End-to-End Cloud Infrastructure Automation</div>
         <div class="log-tag">Terraform · Ansible · GitHub Actions</div>
       </div>
-      <div class="log-row">
-        <div class="log-id">04</div>
-        <div class="log-title">End-to-End MLOps Pipeline</div>
-        <div class="log-tag">Python · MLOps · Azure</div>
-      </div>
-      <div class="log-row">
-        <div class="log-id">05</div>
-        <div class="log-title">More projects on GitHub →</div>
-        <div class="log-tag">21saikat</div>
-      </div>
+
     </div>
   </section>
 
@@ -217,7 +371,6 @@
       <h2 class="section-title">Contact</h2>
       <span class="section-tag">// let's build something</span>
     </div>
-
     <div class="endpoints">
       <div class="endpoint">
         <div class="verb">MAIL</div>
@@ -231,22 +384,22 @@
       </div>
       <div class="endpoint">
         <div class="verb">LINKEDIN</div>
-        <div class="ep-path"><a href="#" target="_blank" rel="noopener">linkedin.com/in/ibnesabidsaikat</a></div>
+        <div class="ep-path"><a href="https://linkedin.com/in/ibnesabidsaikat" target="_blank" rel="noopener">linkedin.com/in/ibnesabidsaikat</a></div>
         <div class="ep-status"><span class="dot"></span>200 OK</div>
       </div>
       <div class="endpoint">
         <div class="verb">MEDIUM</div>
-        <div class="ep-path"><a href="#" target="_blank" rel="noopener">medium.com/@ibnesabidsaikat</a></div>
+        <div class="ep-path"><a href="https://medium.com/@ibnesabidsaikat" target="_blank" rel="noopener">medium.com/@ibnesabidsaikat</a></div>
         <div class="ep-status"><span class="dot"></span>200 OK</div>
       </div>
       <div class="endpoint">
         <div class="verb">DEV.TO</div>
-        <div class="ep-path"><a href="#" target="_blank" rel="noopener">dev.to/ibnesabidsaikat</a></div>
+        <div class="ep-path"><a href="https://dev.to/ibnesabidsaikat" target="_blank" rel="noopener">dev.to/ibnesabidsaikat</a></div>
         <div class="ep-status"><span class="dot"></span>200 OK</div>
       </div>
       <div class="endpoint">
         <div class="verb">YOUTUBE</div>
-        <div class="ep-path"><a href="#" target="_blank" rel="noopener">#IbneSabidSaikat</a></div>
+        <div class="ep-path"><a href="https://youtube.com/@IbneSabidSaikat" target="_blank" rel="noopener">youtube.com/@IbneSabidSaikat</a></div>
         <div class="ep-status"><span class="dot"></span>200 OK</div>
       </div>
     </div>
@@ -262,6 +415,7 @@
 </footer>
 
 <script>
+  // Reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -270,9 +424,28 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08 });
   revealEls.forEach(el => io.observe(el));
-</script>
 
+  // Project filter
+  const filters = document.querySelectorAll('.filt');
+  const rows = document.querySelectorAll('.log-row');
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+
+      rows.forEach(row => {
+        if (filter === 'all' || row.dataset.cat.includes(filter)) {
+          row.style.display = 'grid';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
