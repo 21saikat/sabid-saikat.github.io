@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 <header class="topbar">
@@ -17,6 +17,7 @@
     <nav class="toplinks">
       <a href="#experience">experience</a>
       <a href="#skills">skills</a>
+      <a href="#interests">interests</a>
       <a href="#certs">certifications</a>
       <a href="#projects">deploy_log</a>
       <a href="#community">community</a>
@@ -150,6 +151,46 @@
       <div class="skill-card">
         <div class="skill-cat">Languages &amp; Tools</div>
         <div class="skill-list">Python · Flask · Streamlit · Linux · Nginx · Git · Bash · WSL2</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section id="interests" class="reveal">
+    <div class="section-head">
+      <h2 class="section-title">Interests</h2>
+      <span class="section-tag">// what I'm exploring</span>
+    </div>
+    <div class="interests-grid">
+      <div class="interest-card">
+        <div class="interest-icon">AI</div>
+        <div class="interest-title">AI Agents &amp; Bots</div>
+        <div class="interest-desc">Building intelligent agents, chatbots and autonomous systems using Azure OpenAI &amp; LLMs.</div>
+      </div>
+      <div class="interest-card">
+        <div class="interest-icon">Ops</div>
+        <div class="interest-title">AIOps</div>
+        <div class="interest-desc">Applying AI to operations — self-healing clusters, predictive scaling and alert correlation.</div>
+      </div>
+      <div class="interest-card">
+        <div class="interest-icon">Sec</div>
+        <div class="interest-title">AI SecOps</div>
+        <div class="interest-desc">Security automation, anomaly detection and AI-assisted threat response on cloud infrastructure.</div>
+      </div>
+      <div class="interest-card">
+        <div class="interest-icon">Git</div>
+        <div class="interest-title">GitOps &amp; Platform Eng</div>
+        <div class="interest-desc">Argo CD, progressive delivery and building internal developer platforms.</div>
+      </div>
+      <div class="interest-card">
+        <div class="interest-icon">IaC</div>
+        <div class="interest-title">Infrastructure as Code</div>
+        <div class="interest-desc">Terraform, modular reusable modules and zero-touch cloud provisioning.</div>
+      </div>
+      <div class="interest-card">
+        <div class="interest-icon">Obs</div>
+        <div class="interest-title">Observability</div>
+        <div class="interest-desc">Prometheus, Grafana, custom metrics and full-stack observability pipelines.</div>
       </div>
     </div>
   </section>
@@ -605,6 +646,7 @@
   // Role typing
   const roles = [
     "Cloud & DevOps Engineer",
+    "AIOps & SecOps Engineer",
     "AI / SecOps Engineer",
     "Azure Infrastructure Engineer",
     "Kubernetes & MLOps Engineer"
