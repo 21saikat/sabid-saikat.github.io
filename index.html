@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <header class="topbar">
@@ -35,12 +35,10 @@
           <span>STATUS: OPEN TO OPPORTUNITIES</span>
         </div>
 
-        <!-- Name word-by-word -->
         <h1 class="name">
           <span id="name-word"></span><span class="cursor name-cursor">|</span>
         </h1>
 
-        <!-- Typing role -->
         <div class="typing-role">
           <span id="typed-text"></span><span class="cursor">|</span>
         </div>
@@ -227,156 +225,277 @@
     </div>
 
     <div class="log" id="project-list">
+
       <div class="log-row" data-cat="ai k8s">
-        <div class="log-id">01</div>
-        <div class="log-title">AI-Powered Kubernetes Self-Healing System <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">AI-Powered Kubernetes Self-Healing System <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Auto-detect and heal failed pods using AI + Python on K3s</div>
+        </div>
         <div class="log-tag">K3s · Flask · Azure</div>
       </div>
+
       <div class="log-row" data-cat="ai k8s">
-        <div class="log-id">02</div>
-        <div class="log-title">PredictOps — AI Predictive Auto-Scaling <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">PredictOps — AI Predictive Auto-Scaling <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">ML-based predictive scaling for Kubernetes workloads</div>
+        </div>
         <div class="log-tag">K8s · AI · Azure</div>
       </div>
+
       <div class="log-row" data-cat="ai">
-        <div class="log-id">03</div>
-        <div class="log-title">AlertSense — AI Alert Correlation Engine <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">AlertSense — AI Alert Correlation Engine <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Reduce alert fatigue with intelligent correlation</div>
+        </div>
         <div class="log-tag">Python · AI · Monitoring</div>
       </div>
+
       <div class="log-row" data-cat="ai">
-        <div class="log-id">04</div>
-        <div class="log-title">AI Meets DevOps — Kubernetes via Amazon Q <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">AI Meets DevOps — Kubernetes via Amazon Q <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">No-code Kubernetes deployment using Amazon Q</div>
+        </div>
         <div class="log-tag">Amazon Q · K8s</div>
       </div>
+
       <div class="log-row" data-cat="ai">
-        <div class="log-id">05</div>
-        <div class="log-title">AI-Driven Predictive Analytics Platform (MLOps) <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">AI-Driven Predictive Analytics Platform <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">End-to-end MLOps pipeline on Azure</div>
+        </div>
         <div class="log-tag">MLOps · Azure · Python</div>
       </div>
+
       <div class="log-row" data-cat="ai">
-        <div class="log-id">06</div>
-        <div class="log-title">AI-Powered Resume Analyzer with Azure OpenAI <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">AI-Powered Resume Analyzer with Azure OpenAI <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Real-time Streamlit app with Azure OpenAI</div>
+        </div>
         <div class="log-tag">Streamlit · Azure OpenAI</div>
       </div>
+
       <div class="log-row" data-cat="ai">
-        <div class="log-id">07</div>
-        <div class="log-title">Real-Time Weather Forecast Bot with Azure OpenAI <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">Real-Time Weather Forecast Bot <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Azure OpenAI powered weather assistant</div>
+        </div>
         <div class="log-tag">Python · Azure OpenAI</div>
       </div>
+
       <div class="log-row" data-cat="ai">
-        <div class="log-id">08</div>
-        <div class="log-title">AI-Powered Image Analysis Web App <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">AI-Powered Image Analysis Web App <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Flask + Azure Computer Vision</div>
+        </div>
         <div class="log-tag">Flask · Azure · Python</div>
       </div>
+
       <div class="log-row" data-cat="ai">
-        <div class="log-id">09</div>
-        <div class="log-title">AI-Powered Anomaly Detection on AKS <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">AI Anomaly Detection on AKS <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Real-time anomaly detection with MicroK8s</div>
+        </div>
         <div class="log-tag">AKS · MicroK8s · Azure</div>
       </div>
+
       <div class="log-row" data-cat="ai">
-        <div class="log-id">10</div>
-        <div class="log-title">Creating an MCP Server <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">Creating an MCP Server <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Model Context Protocol server implementation</div>
+        </div>
         <div class="log-tag">MCP · AI</div>
       </div>
+
       <div class="log-row" data-cat="ai">
-        <div class="log-id">11</div>
-        <div class="log-title">AIDevOps-X! <span class="medium-tag">Medium</span></div>
+        <div class="log-icon ai">AI</div>
+        <div class="log-content">
+          <div class="log-title">AIDevOps-X! <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">AI-powered DevOps automation suite</div>
+        </div>
         <div class="log-tag">AI · DevOps</div>
       </div>
+
       <div class="log-row" data-cat="k8s azure">
-        <div class="log-id">12</div>
-        <div class="log-title">CI/CD with Kubernetes, Argo CD &amp; Dashboard <span class="medium-tag">Medium</span></div>
+        <div class="log-icon k8s">K8s</div>
+        <div class="log-content">
+          <div class="log-title">CI/CD with Kubernetes, Argo CD &amp; Dashboard <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Full GitOps pipeline on Azure VM</div>
+        </div>
         <div class="log-tag">Argo CD · K8s · Azure</div>
       </div>
+
       <div class="log-row" data-cat="k8s">
-        <div class="log-id">13</div>
-        <div class="log-title">Real-Time Voting App with Grafana &amp; Prometheus <span class="medium-tag">Medium</span></div>
+        <div class="log-icon k8s">K8s</div>
+        <div class="log-content">
+          <div class="log-title">Real-Time Voting App with Grafana &amp; Prometheus <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Observability stack with live metrics</div>
+        </div>
         <div class="log-tag">K8s · Prometheus · Grafana</div>
       </div>
+
       <div class="log-row" data-cat="k8s">
-        <div class="log-id">14</div>
-        <div class="log-title">Horizontal Pod Autoscaler (HPA) <span class="medium-tag">Medium</span></div>
+        <div class="log-icon k8s">K8s</div>
+        <div class="log-content">
+          <div class="log-title">Horizontal Pod Autoscaler (HPA) <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Dynamic scaling based on CPU utilization</div>
+        </div>
         <div class="log-tag">K8s · HPA</div>
       </div>
+
       <div class="log-row" data-cat="k8s azure">
-        <div class="log-id">15</div>
-        <div class="log-title">Microservices App on AKS <span class="medium-tag">Medium</span></div>
+        <div class="log-icon k8s">K8s</div>
+        <div class="log-content">
+          <div class="log-title">Microservices App on AKS <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Production-ready microservices architecture</div>
+        </div>
         <div class="log-tag">AKS · Microservices</div>
       </div>
+
       <div class="log-row" data-cat="k8s azure">
-        <div class="log-id">16</div>
-        <div class="log-title">Enterprise App with Kubernetes + Helm <span class="medium-tag">Medium</span></div>
+        <div class="log-icon k8s">K8s</div>
+        <div class="log-content">
+          <div class="log-title">Enterprise App with Kubernetes + Helm <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Helm charts + Linux servers on Azure</div>
+        </div>
         <div class="log-tag">Helm · K8s · Azure</div>
       </div>
+
       <div class="log-row" data-cat="k8s">
-        <div class="log-id">17</div>
-        <div class="log-title">Scalable Reddit Clone on Kubernetes <span class="medium-tag">Medium</span></div>
+        <div class="log-icon k8s">K8s</div>
+        <div class="log-content">
+          <div class="log-title">Scalable Reddit Clone on Kubernetes <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Docker + Minikube deployment</div>
+        </div>
         <div class="log-tag">Docker · K8s · Minikube</div>
       </div>
+
       <div class="log-row" data-cat="azure cicd">
-        <div class="log-id">18</div>
-        <div class="log-title">DevOps Suite: Jenkins + Docker + K8s on Azure <span class="medium-tag">Medium</span></div>
+        <div class="log-icon cicd">CI</div>
+        <div class="log-content">
+          <div class="log-title">DevOps Suite: Jenkins + Docker + K8s on Azure <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Complete automation pipeline</div>
+        </div>
         <div class="log-tag">Jenkins · Docker · Azure</div>
       </div>
+
       <div class="log-row" data-cat="cicd">
-        <div class="log-id">19</div>
-        <div class="log-title">Real-Time CI/CD Pipeline with Jenkins <span class="medium-tag">Medium</span></div>
+        <div class="log-icon cicd">CI</div>
+        <div class="log-content">
+          <div class="log-title">Real-Time CI/CD Pipeline with Jenkins <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Automated build, test and deploy</div>
+        </div>
         <div class="log-tag">Jenkins · CI/CD</div>
       </div>
+
       <div class="log-row" data-cat="cicd">
-        <div class="log-id">20</div>
-        <div class="log-title">DevOps without Dockerfile using Buildpacks <span class="medium-tag">Medium</span></div>
+        <div class="log-icon cicd">CI</div>
+        <div class="log-content">
+          <div class="log-title">DevOps without Dockerfile using Buildpacks <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Cloud Native Buildpacks workflow</div>
+        </div>
         <div class="log-tag">Buildpacks · CI/CD</div>
       </div>
+
       <div class="log-row" data-cat="azure infra">
-        <div class="log-id">21</div>
-        <div class="log-title">Automated Azure Infra with Terraform <span class="medium-tag">Medium</span></div>
+        <div class="log-icon azure">Az</div>
+        <div class="log-content">
+          <div class="log-title">Automated Azure Infra with Terraform <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Production-ready, secure &amp; scalable</div>
+        </div>
         <div class="log-tag">Terraform · Azure</div>
       </div>
+
       <div class="log-row" data-cat="azure infra">
-        <div class="log-id">22</div>
-        <div class="log-title">ZeroTouch Azure Deployment <span class="medium-tag">Medium</span></div>
+        <div class="log-icon azure">Az</div>
+        <div class="log-content">
+          <div class="log-title">ZeroTouch Azure Deployment <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Fully automated infrastructure provisioning</div>
+        </div>
         <div class="log-tag">Terraform · Azure</div>
       </div>
+
       <div class="log-row" data-cat="azure infra">
-        <div class="log-id">23</div>
-        <div class="log-title">HA Web App with Docker + Nginx LB on Azure <span class="medium-tag">Medium</span></div>
+        <div class="log-icon azure">Az</div>
+        <div class="log-content">
+          <div class="log-title">HA Web App with Docker + Nginx LB on Azure <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">High availability load-balanced setup</div>
+        </div>
         <div class="log-tag">Docker · Nginx · Azure</div>
       </div>
+
       <div class="log-row" data-cat="azure">
-        <div class="log-id">24</div>
-        <div class="log-title">Static Website on Azure Blob Storage <span class="medium-tag">Medium</span></div>
+        <div class="log-icon azure">Az</div>
+        <div class="log-content">
+          <div class="log-title">Static Website on Azure Blob Storage <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Cost-optimized static hosting</div>
+        </div>
         <div class="log-tag">Azure Blob · Static</div>
       </div>
+
       <div class="log-row" data-cat="azure">
-        <div class="log-id">25</div>
-        <div class="log-title">Portfolio Hosting on Azure App Service <span class="medium-tag">Medium</span></div>
+        <div class="log-icon azure">Az</div>
+        <div class="log-content">
+          <div class="log-title">Portfolio Hosting on Azure App Service <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Fully managed web app deployment</div>
+        </div>
         <div class="log-tag">Azure App Service</div>
       </div>
+
       <div class="log-row" data-cat="azure">
-        <div class="log-id">26</div>
-        <div class="log-title">Serverless API with Azure Functions <span class="medium-tag">Medium</span></div>
+        <div class="log-icon azure">Az</div>
+        <div class="log-content">
+          <div class="log-title">Serverless API with Azure Functions <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Event-driven serverless architecture</div>
+        </div>
         <div class="log-tag">Azure Functions</div>
       </div>
+
       <div class="log-row" data-cat="azure">
-        <div class="log-id">27</div>
-        <div class="log-title">End-to-End Data Solution with Microsoft Fabric <span class="medium-tag">Medium</span></div>
+        <div class="log-icon azure">Az</div>
+        <div class="log-content">
+          <div class="log-title">End-to-End Data Solution with Microsoft Fabric <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Complete analytics platform</div>
+        </div>
         <div class="log-tag">Microsoft Fabric</div>
       </div>
+
       <div class="log-row" data-cat="azure">
-        <div class="log-id">28</div>
-        <div class="log-title">Azure Activity Log Alerts <span class="medium-tag">Medium</span></div>
+        <div class="log-icon azure">Az</div>
+        <div class="log-content">
+          <div class="log-title">Azure Activity Log Alerts <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Real-time monitoring and response</div>
+        </div>
         <div class="log-tag">Azure Monitor</div>
       </div>
+
       <div class="log-row" data-cat="azure">
-        <div class="log-id">29</div>
-        <div class="log-title">Chatbot with Microsoft Azure Portal <span class="medium-tag">Medium</span></div>
+        <div class="log-icon azure">Az</div>
+        <div class="log-content">
+          <div class="log-title">Chatbot with Microsoft Azure Portal <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Built entirely via Azure Portal</div>
+        </div>
         <div class="log-tag">Azure · Chatbot</div>
       </div>
+
       <div class="log-row" data-cat="infra">
-        <div class="log-id">30</div>
-        <div class="log-title">End-to-End Cloud Infra Automation <span class="medium-tag">Medium</span></div>
+        <div class="log-icon infra">IaC</div>
+        <div class="log-content">
+          <div class="log-title">End-to-End Cloud Infra Automation <span class="medium-tag">Medium</span></div>
+          <div class="log-desc">Terraform + Ansible + GitHub Actions</div>
+        </div>
         <div class="log-tag">Terraform · Ansible · GitHub Actions</div>
       </div>
+
     </div>
   </section>
 
@@ -430,41 +549,35 @@
 </footer>
 
 <script>
-  // ===== Name word-by-word typing =====
+  // Name word-by-word
   const nameWords = ["Ibne", "Sabid", "Saikat"];
   let nameIndex = 0;
   let nameChar = 0;
-  let nameDeleting = false;
   const nameEl = document.getElementById('name-word');
 
   function typeName() {
     const current = nameWords[nameIndex];
-    
-    if (!nameDeleting) {
-      nameEl.textContent = current.substring(0, nameChar + 1);
-      nameChar++;
-      if (nameChar === current.length) {
-        // pause then go to next word
-        setTimeout(() => {
-          if (nameIndex < nameWords.length - 1) {
-            nameIndex++;
-            nameChar = 0;
-            nameEl.textContent = "";
-            setTimeout(typeName, 180);
-          } else {
-            // finished full name, keep it
-            nameEl.textContent = "Ibne Sabid Saikat";
-            document.querySelector('.name-cursor').style.display = 'none';
-          }
-        }, 600);
-        return;
-      }
+    nameEl.textContent = current.substring(0, nameChar + 1);
+    nameChar++;
+    if (nameChar === current.length) {
+      setTimeout(() => {
+        if (nameIndex < nameWords.length - 1) {
+          nameIndex++;
+          nameChar = 0;
+          nameEl.textContent = "";
+          setTimeout(typeName, 180);
+        } else {
+          nameEl.textContent = "Ibne Sabid Saikat";
+          document.querySelector('.name-cursor').style.display = 'none';
+        }
+      }, 600);
+      return;
     }
     setTimeout(typeName, 90);
   }
   setTimeout(typeName, 400);
 
-  // ===== Role typing =====
+  // Role typing
   const roles = [
     "Cloud & DevOps Engineer",
     "AI / SecOps Engineer",
@@ -498,7 +611,7 @@
   }
   setTimeout(typeRole, 2200);
 
-  // ===== Reveal =====
+  // Reveal
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -510,7 +623,7 @@
   }, { threshold: 0.08 });
   revealEls.forEach(el => io.observe(el));
 
-  // ===== Filter =====
+  // Filter
   const filters = document.querySelectorAll('.filt');
   const rows = document.querySelectorAll('.log-row');
   filters.forEach(btn => {
