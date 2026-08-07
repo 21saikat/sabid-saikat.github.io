@@ -8,17 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <header class="topbar">
   <div class="wrap topbar-inner">
     <div class="brand"><span class="dot"></span><b>sabid-saikat.com</b></div>
     <nav class="toplinks">
+      <a href="#experience">experience</a>
       <a href="#skills">skills</a>
       <a href="#certs">certifications</a>
-      <a href="#research">research</a>
       <a href="#projects">deploy_log</a>
+      <a href="#community">community</a>
       <a href="#contact">contact</a>
     </nav>
   </div>
@@ -49,6 +50,7 @@
 
         <div class="hero-actions">
           <a class="btn primary" href="#projects">View deploy log →</a>
+          <a class="btn ghost" href="Saikat_CV.pdf" target="_blank" rel="noopener">My CV ↓</a>
           <a class="btn ghost" href="mailto:iibnesabidsaikat4104@gmail.com">Get in touch</a>
           <a class="btn ghost" href="https://github.com/21saikat" target="_blank" rel="noopener">GitHub</a>
         </div>
@@ -90,7 +92,31 @@
         <div class="edu-meta">Completed May 2026</div>
         <div class="mono-label" style="margin-top:20px;">Recognition</div>
         <div class="edu-title">Microsoft Student Ambassador</div>
+        <div class="edu-title" style="margin-top:6px;">AWS Community Builder</div>
       </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="reveal">
+    <div class="section-head">
+      <h2 class="section-title">Experience</h2>
+      <span class="section-tag">// professional</span>
+    </div>
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">DevOps Engineer — Internship</div>
+          <div class="exp-company">InNeed Intelligent Cloud · Bangladesh · On-site</div>
+        </div>
+        <div class="exp-date">May 2025 – Sep 2025</div>
+      </div>
+      <ul class="exp-list">
+        <li>Deployed Azure infrastructure (VMs, VNets, NSGs, Storage) and managed RBAC via Microsoft Entra ID.</li>
+        <li>Provisioned Infrastructure as Code using Terraform across multiple environments; automated VM lifecycle with scripts.</li>
+        <li>Containerised applications with Docker &amp; Kubernetes (Minikube); built CI/CD pipelines with Jenkins, Argo CD &amp; GitHub Actions.</li>
+        <li>Automated configuration management and application deployment using Ansible.</li>
+      </ul>
     </div>
   </section>
 
@@ -103,7 +129,7 @@
     <div class="skills-grid">
       <div class="skill-card">
         <div class="skill-cat">Cloud Platforms</div>
-        <div class="skill-list">Microsoft Azure · Azure App Service · Azure Functions · AKS · Azure Blob · Microsoft Fabric · Azure Monitor · Azure OpenAI</div>
+        <div class="skill-list">Microsoft Azure · AWS · Azure App Service · Azure Functions · AKS · Azure Blob · Microsoft Fabric · Azure Monitor · Azure OpenAI</div>
       </div>
       <div class="skill-card">
         <div class="skill-cat">Containers &amp; Orchestration</div>
@@ -111,11 +137,11 @@
       </div>
       <div class="skill-card">
         <div class="skill-cat">CI/CD &amp; Automation</div>
-        <div class="skill-list">Jenkins · GitHub Actions · Buildpacks · Ansible · Terraform</div>
+        <div class="skill-list">Jenkins · GitHub Actions · Buildpacks · Ansible · Terraform · Bicep</div>
       </div>
       <div class="skill-card">
         <div class="skill-cat">Observability</div>
-        <div class="skill-list">Prometheus · Grafana · Azure Monitor · Activity Log Alerts</div>
+        <div class="skill-list">Prometheus · Grafana · Azure Monitor · Log Analytics · Activity Log Alerts</div>
       </div>
       <div class="skill-card">
         <div class="skill-cat">AI / MLOps</div>
@@ -123,7 +149,7 @@
       </div>
       <div class="skill-card">
         <div class="skill-cat">Languages &amp; Tools</div>
-        <div class="skill-list">Python · Flask · Streamlit · Linux · Nginx · Git · Bash</div>
+        <div class="skill-list">Python · Flask · Streamlit · Linux · Nginx · Git · Bash · WSL2</div>
       </div>
     </div>
   </section>
@@ -225,7 +251,6 @@
     </div>
 
     <div class="log" id="project-list">
-
       <div class="log-row" data-cat="ai k8s">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -234,7 +259,6 @@
         </div>
         <div class="log-tag">K3s · Flask · Azure</div>
       </div>
-
       <div class="log-row" data-cat="ai k8s">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -243,7 +267,6 @@
         </div>
         <div class="log-tag">K8s · AI · Azure</div>
       </div>
-
       <div class="log-row" data-cat="ai">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -252,7 +275,6 @@
         </div>
         <div class="log-tag">Python · AI · Monitoring</div>
       </div>
-
       <div class="log-row" data-cat="ai">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -261,7 +283,6 @@
         </div>
         <div class="log-tag">Amazon Q · K8s</div>
       </div>
-
       <div class="log-row" data-cat="ai">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -270,7 +291,6 @@
         </div>
         <div class="log-tag">MLOps · Azure · Python</div>
       </div>
-
       <div class="log-row" data-cat="ai">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -279,7 +299,6 @@
         </div>
         <div class="log-tag">Streamlit · Azure OpenAI</div>
       </div>
-
       <div class="log-row" data-cat="ai">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -288,7 +307,6 @@
         </div>
         <div class="log-tag">Python · Azure OpenAI</div>
       </div>
-
       <div class="log-row" data-cat="ai">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -297,7 +315,6 @@
         </div>
         <div class="log-tag">Flask · Azure · Python</div>
       </div>
-
       <div class="log-row" data-cat="ai">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -306,7 +323,6 @@
         </div>
         <div class="log-tag">AKS · MicroK8s · Azure</div>
       </div>
-
       <div class="log-row" data-cat="ai">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -315,7 +331,6 @@
         </div>
         <div class="log-tag">MCP · AI</div>
       </div>
-
       <div class="log-row" data-cat="ai">
         <div class="log-icon ai">AI</div>
         <div class="log-content">
@@ -324,7 +339,6 @@
         </div>
         <div class="log-tag">AI · DevOps</div>
       </div>
-
       <div class="log-row" data-cat="k8s azure">
         <div class="log-icon k8s">K8s</div>
         <div class="log-content">
@@ -333,7 +347,6 @@
         </div>
         <div class="log-tag">Argo CD · K8s · Azure</div>
       </div>
-
       <div class="log-row" data-cat="k8s">
         <div class="log-icon k8s">K8s</div>
         <div class="log-content">
@@ -342,7 +355,6 @@
         </div>
         <div class="log-tag">K8s · Prometheus · Grafana</div>
       </div>
-
       <div class="log-row" data-cat="k8s">
         <div class="log-icon k8s">K8s</div>
         <div class="log-content">
@@ -351,7 +363,6 @@
         </div>
         <div class="log-tag">K8s · HPA</div>
       </div>
-
       <div class="log-row" data-cat="k8s azure">
         <div class="log-icon k8s">K8s</div>
         <div class="log-content">
@@ -360,7 +371,6 @@
         </div>
         <div class="log-tag">AKS · Microservices</div>
       </div>
-
       <div class="log-row" data-cat="k8s azure">
         <div class="log-icon k8s">K8s</div>
         <div class="log-content">
@@ -369,7 +379,6 @@
         </div>
         <div class="log-tag">Helm · K8s · Azure</div>
       </div>
-
       <div class="log-row" data-cat="k8s">
         <div class="log-icon k8s">K8s</div>
         <div class="log-content">
@@ -378,7 +387,6 @@
         </div>
         <div class="log-tag">Docker · K8s · Minikube</div>
       </div>
-
       <div class="log-row" data-cat="azure cicd">
         <div class="log-icon cicd">CI</div>
         <div class="log-content">
@@ -387,7 +395,6 @@
         </div>
         <div class="log-tag">Jenkins · Docker · Azure</div>
       </div>
-
       <div class="log-row" data-cat="cicd">
         <div class="log-icon cicd">CI</div>
         <div class="log-content">
@@ -396,7 +403,6 @@
         </div>
         <div class="log-tag">Jenkins · CI/CD</div>
       </div>
-
       <div class="log-row" data-cat="cicd">
         <div class="log-icon cicd">CI</div>
         <div class="log-content">
@@ -405,7 +411,6 @@
         </div>
         <div class="log-tag">Buildpacks · CI/CD</div>
       </div>
-
       <div class="log-row" data-cat="azure infra">
         <div class="log-icon azure">Az</div>
         <div class="log-content">
@@ -414,7 +419,6 @@
         </div>
         <div class="log-tag">Terraform · Azure</div>
       </div>
-
       <div class="log-row" data-cat="azure infra">
         <div class="log-icon azure">Az</div>
         <div class="log-content">
@@ -423,7 +427,6 @@
         </div>
         <div class="log-tag">Terraform · Azure</div>
       </div>
-
       <div class="log-row" data-cat="azure infra">
         <div class="log-icon azure">Az</div>
         <div class="log-content">
@@ -432,7 +435,6 @@
         </div>
         <div class="log-tag">Docker · Nginx · Azure</div>
       </div>
-
       <div class="log-row" data-cat="azure">
         <div class="log-icon azure">Az</div>
         <div class="log-content">
@@ -441,7 +443,6 @@
         </div>
         <div class="log-tag">Azure Blob · Static</div>
       </div>
-
       <div class="log-row" data-cat="azure">
         <div class="log-icon azure">Az</div>
         <div class="log-content">
@@ -450,7 +451,6 @@
         </div>
         <div class="log-tag">Azure App Service</div>
       </div>
-
       <div class="log-row" data-cat="azure">
         <div class="log-icon azure">Az</div>
         <div class="log-content">
@@ -459,7 +459,6 @@
         </div>
         <div class="log-tag">Azure Functions</div>
       </div>
-
       <div class="log-row" data-cat="azure">
         <div class="log-icon azure">Az</div>
         <div class="log-content">
@@ -468,7 +467,6 @@
         </div>
         <div class="log-tag">Microsoft Fabric</div>
       </div>
-
       <div class="log-row" data-cat="azure">
         <div class="log-icon azure">Az</div>
         <div class="log-content">
@@ -477,7 +475,6 @@
         </div>
         <div class="log-tag">Azure Monitor</div>
       </div>
-
       <div class="log-row" data-cat="azure">
         <div class="log-icon azure">Az</div>
         <div class="log-content">
@@ -486,7 +483,6 @@
         </div>
         <div class="log-tag">Azure · Chatbot</div>
       </div>
-
       <div class="log-row" data-cat="infra">
         <div class="log-icon infra">IaC</div>
         <div class="log-content">
@@ -495,7 +491,36 @@
         </div>
         <div class="log-tag">Terraform · Ansible · GitHub Actions</div>
       </div>
+    </div>
+  </section>
 
+  <!-- COMMUNITY & CONFERENCES -->
+  <section id="community" class="reveal">
+    <div class="section-head">
+      <h2 class="section-title">Community &amp; Conferences</h2>
+      <span class="section-tag">// events &amp; involvement</span>
+    </div>
+    <div class="community-grid">
+      <div class="comm-card">
+        <div class="comm-badge">AWS</div>
+        <div class="comm-title">AWS Community Builder</div>
+        <div class="comm-desc">Selected for the AWS Community Builders program — contributing to the local cloud community.</div>
+      </div>
+      <div class="comm-card">
+        <div class="comm-badge">Event</div>
+        <div class="comm-title">AWS Community Day Bangladesh 2025</div>
+        <div class="comm-desc">Attended the largest AWS community gathering in the region (BRAC University, Dec 2025).</div>
+      </div>
+      <div class="comm-card">
+        <div class="comm-badge">Event</div>
+        <div class="comm-title">AWS re:Invent 2025 Recap — Dhaka</div>
+        <div class="comm-desc">Participated in the official re:Invent recap event organised by AWS User Group Bangladesh (Jan 2026).</div>
+      </div>
+      <div class="comm-card">
+        <div class="comm-badge">Event</div>
+        <div class="comm-title">Cloud Native Days Dhaka 2026</div>
+        <div class="comm-desc">Joined Bangladesh’s first full-day Cloud Native conference (CNCF supported).</div>
+      </div>
     </div>
   </section>
 
@@ -527,8 +552,8 @@
         <div class="ep-status"><span class="dot"></span>200 OK</div>
       </div>
       <div class="endpoint">
-        <div class="verb">DEV.TO</div>
-        <div class="ep-path"><a href="https://dev.to/ibnesabidsaikat" target="_blank" rel="noopener">dev.to/ibnesabidsaikat</a></div>
+        <div class="verb">CV</div>
+        <div class="ep-path"><a href="Saikat_CV.pdf" target="_blank" rel="noopener">Download My CV (PDF)</a></div>
         <div class="ep-status"><span class="dot"></span>200 OK</div>
       </div>
       <div class="endpoint">
