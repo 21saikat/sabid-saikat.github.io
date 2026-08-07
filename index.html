@@ -159,4 +159,120 @@
     <div class="paper">
       <div class="paper-id">02</div>
       <div>
-        <div class="paper-title">Enhancing e-KYC Security and Privacy: Harnessing Quantum Computing and Blockchain in Web
+        <div class="paper-title">Enhancing e-KYC Security and Privacy: Harnessing Quantum Computing and Blockchain in Web 3.0</div>
+        <div class="paper-venue">ACM</div>
+      </div>
+      <a class="paper-link" href="https://dl.acm.org/doi/abs/10.1145/3686166" target="_blank" rel="noopener">Read paper →</a>
+    </div>
+
+    <div class="paper">
+      <div class="paper-id">03</div>
+      <div>
+        <div class="paper-title">Smart Contracts Vulnerabilities and Countermeasures in Blockchain Security</div>
+        <div class="paper-venue">IEEE</div>
+      </div>
+      <a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/11196566/" target="_blank" rel="noopener">Read paper →</a>
+    </div>
+  </section>
+
+  <!-- DEPLOY LOG / PROJECTS -->
+  <section id="projects" class="reveal">
+    <div class="section-head">
+      <h2 class="section-title">Deploy Log</h2>
+      <span class="section-tag">// 30+ projects shipped in public</span>
+    </div>
+
+    <div class="log">
+      <div class="log-row">
+        <div class="log-id">01</div>
+        <div class="log-title">Self-Healing Kubernetes Cluster (K8s Auto-Healing System w/ AI)</div>
+        <div class="log-tag">K3s · Flask · Azure</div>
+      </div>
+      <div class="log-row">
+        <div class="log-id">02</div>
+        <div class="log-title">Horizontal Pod Autoscaler on Kubernetes</div>
+        <div class="log-tag">K8s · Prometheus</div>
+      </div>
+      <div class="log-row">
+        <div class="log-id">03</div>
+        <div class="log-title">End-to-End Cloud Infrastructure Automation</div>
+        <div class="log-tag">Terraform · Ansible · GitHub Actions</div>
+      </div>
+      <div class="log-row">
+        <div class="log-id">04</div>
+        <div class="log-title">End-to-End MLOps Pipeline</div>
+        <div class="log-tag">Python · MLOps · Azure</div>
+      </div>
+      <div class="log-row">
+        <div class="log-id">05</div>
+        <div class="log-title">More projects on GitHub →</div>
+        <div class="log-tag">21saikat</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="reveal" style="border-bottom:none;">
+    <div class="section-head">
+      <h2 class="section-title">Contact</h2>
+      <span class="section-tag">// let's build something</span>
+    </div>
+
+    <div class="endpoints">
+      <div class="endpoint">
+        <div class="verb">MAIL</div>
+        <div class="ep-path"><a href="mailto:iibnesabidsaikat4104@gmail.com">iibnesabidsaikat4104@gmail.com</a></div>
+        <div class="ep-status"><span class="dot"></span>200 OK</div>
+      </div>
+      <div class="endpoint">
+        <div class="verb">GITHUB</div>
+        <div class="ep-path"><a href="https://github.com/21saikat" target="_blank" rel="noopener">github.com/21saikat</a></div>
+        <div class="ep-status"><span class="dot"></span>200 OK</div>
+      </div>
+      <div class="endpoint">
+        <div class="verb">LINKEDIN</div>
+        <div class="ep-path"><a href="#" target="_blank" rel="noopener">linkedin.com/in/ibnesabidsaikat</a></div>
+        <div class="ep-status"><span class="dot"></span>200 OK</div>
+      </div>
+      <div class="endpoint">
+        <div class="verb">MEDIUM</div>
+        <div class="ep-path"><a href="#" target="_blank" rel="noopener">medium.com/@ibnesabidsaikat</a></div>
+        <div class="ep-status"><span class="dot"></span>200 OK</div>
+      </div>
+      <div class="endpoint">
+        <div class="verb">DEV.TO</div>
+        <div class="ep-path"><a href="#" target="_blank" rel="noopener">dev.to/ibnesabidsaikat</a></div>
+        <div class="ep-status"><span class="dot"></span>200 OK</div>
+      </div>
+      <div class="endpoint">
+        <div class="verb">YOUTUBE</div>
+        <div class="ep-path"><a href="#" target="_blank" rel="noopener">#IbneSabidSaikat</a></div>
+        <div class="ep-status"><span class="dot"></span>200 OK</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <div class="foot-row">
+    <div class="foot-mono">© 2026 Ibne Sabid Saikat. Built &amp; deployed on GitHub Pages.</div>
+    <div class="foot-mono">sabid-saikat.com</div>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('show');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
