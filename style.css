@@ -344,7 +344,7 @@ footer{
 }
 .foot-mono{font-family:var(--mono);font-size:11px;color:var(--faint);}
 
-.reveal{opacity:0;transform:translateY(10px);transition:opacity .5s ease, transform .5s ease;}
+.reveal{opacity:1;transform:none;}
 .reveal.show{opacity:1;transform:translateY(0);}
 
 :focus-visible{outline:2px solid var(--pine);outline-offset:2px;}
