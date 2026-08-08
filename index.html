@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ibne Sabid Saikat — Cloud &amp; DevOps Engineer</title>
-<meta name="description" content="Ibne Sabid Saikat — Cloud, DevOps &amp; AIOps Engineer. Azure certified, published researcher, 30+ shipped projects, YouTube educator.">
+<meta name="description" content="Ibne Sabid Saikat — Cloud, DevOps &amp; AIOps Engineer. Azure certified, published researcher, 30+ shipped projects.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
 <header class="topbar">
   <div class="wrap topbar-inner">
     <div class="brand"><span class="dot"></span><b>sabid-saikat.com</b></div>
     <nav class="toplinks">
+      <a href="#about">about</a>
       <a href="#experience">experience</a>
       <a href="#skills">skills</a>
       <a href="#flagship">flagship</a>
-      <a href="#projects">deploy_log</a>
+      <a href="#projects">projects</a>
       <a href="#teaching">teaching</a>
-      <a href="#community">community</a>
       <a href="#contact">contact</a>
+      <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">☀</span>
+      </button>
     </nav>
   </div>
 </header>
@@ -38,11 +44,11 @@
         </div>
 
         <h1 class="name">
-          <span id="name-word"></span><span class="cursor name-cursor">|</span>
+          <span id="name-word"></span><span class="cursor-blink name-cursor">|</span>
         </h1>
 
         <div class="typing-role">
-          <span id="typed-text"></span><span class="cursor">|</span>
+          <span id="typed-text"></span><span class="cursor-blink">|</span>
         </div>
 
         <p class="role-line">
@@ -50,7 +56,7 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">View deploy log →</a>
+          <a class="btn primary" href="#projects">View projects →</a>
           <a class="btn ghost" href="Saikat_CV.pdf" target="_blank" rel="noopener">My CV ↓</a>
           <a class="btn ghost" href="mailto:iibnesabidsaikat4104@gmail.com">Get in touch</a>
           <a class="btn ghost" href="https://github.com/21saikat" target="_blank" rel="noopener">GitHub</a>
@@ -84,26 +90,28 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="reveal">
+  <!-- WHO I AM / ABOUT -->
+  <section id="about" class="reveal">
     <div class="section-head">
-      <h2 class="section-title">About</h2>
+      <h2 class="section-title">Who I Am</h2>
       <span class="section-tag">// background</span>
     </div>
     <div class="about-grid">
       <div>
         <p class="about-text">
-          Cloud &amp; DevOps Engineer with dual Microsoft certification (AZ-104, AZ-305) and hands-on experience building production-grade infrastructure on Azure. I specialize in Kubernetes, GitOps CI/CD, Terraform IaC, and applying AI to operations (self-healing systems, predictive scaling, alert correlation).
+          I'm <strong>Ibne Sabid Saikat</strong> — a Cloud &amp; DevOps engineer obsessed with building systems that are resilient, intelligent, and automated. From bare-metal to multi-cloud, I design infrastructure that heals itself.
         </p>
         <p class="about-text" style="margin-top:16px;">
-          Delivered 30+ real-world projects publicly. Active educator teaching Cloud &amp; DevOps concepts in Bengali on YouTube (1K+ subscribers). Published researcher with papers in IEEE, ACM and IGI Global. Currently seeking Junior / Associate Cloud or DevOps Engineer roles.
+          My expertise spans <strong>Azure, Kubernetes, Docker, Terraform, Jenkins, and Argo CD</strong>. I've deployed everything from self-healing K8s clusters to AI-powered anomaly detection systems and serverless APIs — all production-grade.
+        </p>
+        <p class="about-text" style="margin-top:16px;">
+          I'm heading toward <strong>AIOps &amp; SecOps</strong> — the frontier where artificial intelligence meets infrastructure reliability and security. My mission: make cloud infrastructure smarter, not just bigger.
         </p>
       </div>
       <div class="about-side">
         <div class="mono-label">Education</div>
         <div class="edu-title">B.Sc. in Computer Science &amp; Engineering</div>
-        <div class="edu-meta">CGPA 3.8 / 4.0</div>
-        <div class="edu-meta">Completed May 2026</div>
+        <div class="edu-meta">CGPA 3.8 / 4.0 · Completed May 2026</div>
         <div class="mono-label" style="margin-top:22px;">Recognition</div>
         <div class="edu-title">Microsoft Student Ambassador</div>
         <div class="edu-title" style="margin-top:6px;">AWS Community Builder</div>
@@ -135,7 +143,7 @@
     </div>
   </section>
 
-  <!-- SKILLS + LANGUAGES -->
+  <!-- SKILLS -->
   <section id="skills" class="reveal">
     <div class="section-head">
       <h2 class="section-title">Skills</h2>
@@ -167,8 +175,6 @@
         <div class="skill-list">Python · Flask · Streamlit · Linux · Nginx · Git · Bash · WSL2</div>
       </div>
     </div>
-
-    <!-- Languages -->
     <div class="languages-row">
       <div class="lang-label">Spoken Languages</div>
       <div class="lang-items">
@@ -178,88 +184,269 @@
     </div>
   </section>
 
-  <!-- INTERESTS -->
-  <section id="interests" class="reveal">
-    <div class="section-head">
-      <h2 class="section-title">Interests</h2>
-      <span class="section-tag">// what I'm exploring</span>
-    </div>
-    <div class="interests-grid">
-      <div class="interest-card">
-        <div class="interest-icon">AI</div>
-        <div class="interest-title">AI Agents &amp; Bots</div>
-        <div class="interest-desc">Building intelligent agents, chatbots and autonomous systems using Azure OpenAI &amp; LLMs.</div>
-      </div>
-      <div class="interest-card">
-        <div class="interest-icon">Ops</div>
-        <div class="interest-title">AIOps</div>
-        <div class="interest-desc">Applying AI to operations — self-healing clusters, predictive scaling and alert correlation.</div>
-      </div>
-      <div class="interest-card">
-        <div class="interest-icon">Sec</div>
-        <div class="interest-title">AI SecOps</div>
-        <div class="interest-desc">Security automation, anomaly detection and AI-assisted threat response on cloud infrastructure.</div>
-      </div>
-      <div class="interest-card">
-        <div class="interest-icon">Git</div>
-        <div class="interest-title">GitOps &amp; Platform Eng</div>
-        <div class="interest-desc">Argo CD, progressive delivery and building internal developer platforms.</div>
-      </div>
-      <div class="interest-card">
-        <div class="interest-icon">IaC</div>
-        <div class="interest-title">Infrastructure as Code</div>
-        <div class="interest-desc">Terraform, modular reusable modules and zero-touch cloud provisioning.</div>
-      </div>
-      <div class="interest-card">
-        <div class="interest-icon">Obs</div>
-        <div class="interest-title">Observability</div>
-        <div class="interest-desc">Prometheus, Grafana, custom metrics and full-stack observability pipelines.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FLAGSHIP PROJECTS -->
+  <!-- FLAGSHIP -->
   <section id="flagship" class="reveal">
     <div class="section-head">
       <h2 class="section-title">Flagship Projects</h2>
       <span class="section-tag">// highest impact builds</span>
     </div>
     <div class="flagship-grid">
-
       <div class="flag-card">
         <div class="flag-top">
           <span class="flag-badge">AIOps</span>
           <span class="flag-impact">−70% manual intervention</span>
         </div>
         <h3 class="flag-title">AI-Powered Kubernetes Self-Healing System</h3>
-        <p class="flag-desc">
-          Autonomous healing system that detects pod failures via Prometheus metrics and uses Azure OpenAI GPT-4 to decide and execute recovery actions. Deployed on K3s / AKS.
-        </p>
-        <div class="flag-tech">AKS · Python · Azure OpenAI · Prometheus · K3s</div>
+        <p class="flag-desc">Autonomous healing system that detects pod failures via Prometheus and uses Azure OpenAI GPT-4 to decide and execute recovery actions.</p>
+        <div class="flag-tech">AKS · Python · Azure OpenAI · Prometheus</div>
       </div>
-
       <div class="flag-card">
         <div class="flag-top">
           <span class="flag-badge">GitOps</span>
           <span class="flag-impact">2 hrs → &lt;10 min deploys</span>
         </div>
         <h3 class="flag-title">Production CI/CD with Jenkins + Argo CD</h3>
-        <p class="flag-desc">
-          Full GitOps pipeline with blue-green deployments. Reduced deployment time from 2 hours to under 10 minutes while improving release reliability and rollback speed.
-        </p>
-        <div class="flag-tech">Jenkins · Argo CD · Docker · Kubernetes · Blue-Green</div>
+        <p class="flag-desc">Full GitOps pipeline with blue-green deployments. Reduced deployment time from 2 hours to under 10 minutes.</p>
+        <div class="flag-tech">Jenkins · Argo CD · Docker · Kubernetes</div>
       </div>
-
       <div class="flag-card">
         <div class="flag-top">
           <span class="flag-badge">IaC</span>
-          <span class="flag-impact">Days → &lt;30 min provisioning</span>
+          <span class="flag-impact">Days → &lt;30 min</span>
         </div>
         <h3 class="flag-title">ZeroTouch Azure Infrastructure</h3>
-        <p class="flag-desc">
-          Single git push provisions complete Azure environments (VMs, VNets, AKS, RBAC) using Terraform + Ansible + GitHub Actions. Fully automated, multi-environment ready.
-        </p>
-        <div class="flag-tech">Terraform · Ansible · GitHub Actions · AKS · Azure</div>
+        <p class="flag-desc">Single git push provisions complete Azure environments using Terraform + Ansible + GitHub Actions.</p>
+        <div class="flag-tech">Terraform · Ansible · GitHub Actions · AKS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (3-column grid) -->
+  <section id="projects" class="reveal">
+    <div class="section-head">
+      <h2 class="section-title">All Projects</h2>
+      <span class="section-tag">// 30 builds · write-ups on Medium</span>
+    </div>
+
+    <div class="log-controls">
+      <button class="filt active" data-filter="all">All</button>
+      <button class="filt" data-filter="ai">AI / MLOps</button>
+      <button class="filt" data-filter="k8s">Kubernetes</button>
+      <button class="filt" data-filter="azure">Azure</button>
+      <button class="filt" data-filter="cicd">CI/CD</button>
+      <button class="filt" data-filter="infra">Infrastructure</button>
+    </div>
+
+    <div class="projects-grid" id="project-list">
+
+      <div class="project-card" data-cat="ai k8s">
+        <div class="pc-num">01</div>
+        <h3 class="pc-title">AI-Powered Kubernetes Self-Healing System</h3>
+        <p class="pc-desc">Auto-detect and heal failed pods using AI + Python on K3s.</p>
+        <div class="pc-tags"><span>K3s</span><span>AI</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai k8s">
+        <div class="pc-num">02</div>
+        <h3 class="pc-title">PredictOps — AI Predictive Auto-Scaling</h3>
+        <p class="pc-desc">ML-based predictive scaling for Kubernetes workloads.</p>
+        <div class="pc-tags"><span>K8s</span><span>AI</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="pc-num">03</div>
+        <h3 class="pc-title">AlertSense — AI Alert Correlation</h3>
+        <p class="pc-desc">Reduce alert fatigue with intelligent correlation engine.</p>
+        <div class="pc-tags"><span>Python</span><span>AI</span><span>Monitoring</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="pc-num">04</div>
+        <h3 class="pc-title">AI Meets DevOps — Kubernetes via Amazon Q</h3>
+        <p class="pc-desc">No-code Kubernetes deployment using Amazon Q.</p>
+        <div class="pc-tags"><span>Amazon Q</span><span>K8s</span><span>AI</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="pc-num">05</div>
+        <h3 class="pc-title">AI-Powered Resume Analyzer</h3>
+        <p class="pc-desc">Real-time Streamlit app with Azure OpenAI.</p>
+        <div class="pc-tags"><span>Streamlit</span><span>Azure OpenAI</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="pc-num">06</div>
+        <h3 class="pc-title">Creating an MCP Server</h3>
+        <p class="pc-desc">Model Context Protocol server implementation.</p>
+        <div class="pc-tags"><span>MCP</span><span>AI</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="pc-num">07</div>
+        <h3 class="pc-title">AIDevOps-X Platform</h3>
+        <p class="pc-desc">AI-powered DevOps automation suite.</p>
+        <div class="pc-tags"><span>AI</span><span>DevOps</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="k8s azure">
+        <div class="pc-num">08</div>
+        <h3 class="pc-title">CI/CD with Kubernetes + Argo CD</h3>
+        <p class="pc-desc">Full GitOps pipeline on Azure VM with dashboard.</p>
+        <div class="pc-tags"><span>Argo CD</span><span>K8s</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="k8s">
+        <div class="pc-num">09</div>
+        <h3 class="pc-title">Real-Time Voting App + Observability</h3>
+        <p class="pc-desc">Grafana, Prometheus and Kubernetes stack.</p>
+        <div class="pc-tags"><span>Prometheus</span><span>Grafana</span><span>K8s</span></div>
+      </div>
+
+      <div class="project-card" data-cat="k8s">
+        <div class="pc-num">10</div>
+        <h3 class="pc-title">Horizontal Pod Autoscaler (HPA)</h3>
+        <p class="pc-desc">Dynamic scaling based on CPU utilization.</p>
+        <div class="pc-tags"><span>K8s</span><span>HPA</span></div>
+      </div>
+
+      <div class="project-card" data-cat="k8s azure">
+        <div class="pc-num">11</div>
+        <h3 class="pc-title">Microservices on AKS</h3>
+        <p class="pc-desc">Production-ready microservices architecture.</p>
+        <div class="pc-tags"><span>AKS</span><span>Microservices</span></div>
+      </div>
+
+      <div class="project-card" data-cat="k8s azure">
+        <div class="pc-num">12</div>
+        <h3 class="pc-title">Enterprise App with Helm</h3>
+        <p class="pc-desc">Helm charts + Linux servers on Azure.</p>
+        <div class="pc-tags"><span>Helm</span><span>K8s</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure cicd">
+        <div class="pc-num">13</div>
+        <h3 class="pc-title">DevOps Suite: Jenkins + Docker + K8s</h3>
+        <p class="pc-desc">Complete automation pipeline on Azure.</p>
+        <div class="pc-tags"><span>Jenkins</span><span>Docker</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="cicd">
+        <div class="pc-num">14</div>
+        <h3 class="pc-title">Real-Time CI/CD with Jenkins</h3>
+        <p class="pc-desc">Automated build, test and deploy pipeline.</p>
+        <div class="pc-tags"><span>Jenkins</span><span>CI/CD</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure infra">
+        <div class="pc-num">15</div>
+        <h3 class="pc-title">Automated Azure Infra with Terraform</h3>
+        <p class="pc-desc">Production-ready, secure &amp; scalable IaC.</p>
+        <div class="pc-tags"><span>Terraform</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure infra">
+        <div class="pc-num">16</div>
+        <h3 class="pc-title">ZeroTouch Azure Deployment</h3>
+        <p class="pc-desc">Fully automated infrastructure provisioning.</p>
+        <div class="pc-tags"><span>Terraform</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure">
+        <div class="pc-num">17</div>
+        <h3 class="pc-title">HA Web App with Nginx Load Balancer</h3>
+        <p class="pc-desc">High availability setup on Azure.</p>
+        <div class="pc-tags"><span>Docker</span><span>Nginx</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure">
+        <div class="pc-num">18</div>
+        <h3 class="pc-title">Static Website on Azure Blob</h3>
+        <p class="pc-desc">Cost-optimized static hosting.</p>
+        <div class="pc-tags"><span>Azure Blob</span><span>Static</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure">
+        <div class="pc-num">19</div>
+        <h3 class="pc-title">Serverless API with Azure Functions</h3>
+        <p class="pc-desc">Event-driven serverless architecture.</p>
+        <div class="pc-tags"><span>Azure Functions</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure">
+        <div class="pc-num">20</div>
+        <h3 class="pc-title">Microsoft Fabric Data Solution</h3>
+        <p class="pc-desc">End-to-end analytics platform.</p>
+        <div class="pc-tags"><span>Microsoft Fabric</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="pc-num">21</div>
+        <h3 class="pc-title">Real-Time Weather Forecast Bot</h3>
+        <p class="pc-desc">Azure OpenAI powered weather assistant.</p>
+        <div class="pc-tags"><span>Python</span><span>Azure OpenAI</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="pc-num">22</div>
+        <h3 class="pc-title">AI Image Analysis Web App</h3>
+        <p class="pc-desc">Flask + Azure Computer Vision.</p>
+        <div class="pc-tags"><span>Flask</span><span>Azure</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="pc-num">23</div>
+        <h3 class="pc-title">AI Anomaly Detection on AKS</h3>
+        <p class="pc-desc">Real-time anomaly detection with MicroK8s.</p>
+        <div class="pc-tags"><span>AKS</span><span>MicroK8s</span></div>
+      </div>
+
+      <div class="project-card" data-cat="k8s">
+        <div class="pc-num">24</div>
+        <h3 class="pc-title">Scalable Reddit Clone on Kubernetes</h3>
+        <p class="pc-desc">Docker + Minikube deployment.</p>
+        <div class="pc-tags"><span>Docker</span><span>K8s</span><span>Minikube</span></div>
+      </div>
+
+      <div class="project-card" data-cat="cicd">
+        <div class="pc-num">25</div>
+        <h3 class="pc-title">DevOps without Dockerfile (Buildpacks)</h3>
+        <p class="pc-desc">Cloud Native Buildpacks workflow.</p>
+        <div class="pc-tags"><span>Buildpacks</span><span>CI/CD</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure">
+        <div class="pc-num">26</div>
+        <h3 class="pc-title">Portfolio on Azure App Service</h3>
+        <p class="pc-desc">Fully managed web app deployment.</p>
+        <div class="pc-tags"><span>Azure App Service</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure">
+        <div class="pc-num">27</div>
+        <h3 class="pc-title">Azure Activity Log Alerts</h3>
+        <p class="pc-desc">Real-time monitoring and response.</p>
+        <div class="pc-tags"><span>Azure Monitor</span></div>
+      </div>
+
+      <div class="project-card" data-cat="azure">
+        <div class="pc-num">28</div>
+        <h3 class="pc-title">Chatbot with Azure Portal</h3>
+        <p class="pc-desc">Built entirely via Azure Portal.</p>
+        <div class="pc-tags"><span>Azure</span><span>Chatbot</span></div>
+      </div>
+
+      <div class="project-card" data-cat="infra">
+        <div class="pc-num">29</div>
+        <h3 class="pc-title">End-to-End Cloud Infra Automation</h3>
+        <p class="pc-desc">Terraform + Ansible + GitHub Actions.</p>
+        <div class="pc-tags"><span>Terraform</span><span>Ansible</span></div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="pc-num">30</div>
+        <h3 class="pc-title">AI-Driven Predictive Analytics Platform</h3>
+        <p class="pc-desc">End-to-end MLOps pipeline on Azure.</p>
+        <div class="pc-tags"><span>MLOps</span><span>Azure</span><span>Python</span></div>
       </div>
 
     </div>
@@ -276,14 +463,14 @@
         <div class="teaching-badge">YouTube</div>
         <div class="teaching-title">Cloud &amp; DevOps Educator</div>
         <p class="teaching-desc">
-          Creating practical Cloud &amp; DevOps tutorials in <strong>Bengali</strong> to help students and early-career engineers in Bangladesh and beyond. Covering Azure, Kubernetes, CI/CD, Terraform, Docker and real project walkthroughs.
+          Creating practical Cloud &amp; DevOps tutorials in <strong>Bengali</strong> to help students and early-career engineers. Covering Azure, Kubernetes, CI/CD, Terraform and real project walkthroughs.
         </p>
         <div class="teaching-stats">
           <div class="t-stat"><span class="t-num">1K+</span><span class="t-lbl">Subscribers</span></div>
           <div class="t-stat"><span class="t-num">30+</span><span class="t-lbl">Project videos</span></div>
           <div class="t-stat"><span class="t-num">Bengali</span><span class="t-lbl">Language</span></div>
         </div>
-        <a class="btn primary" href="https://www.youtube.com/@ibnesabidsaikat4174" target="_blank" rel="noopener" style="margin-top:20px; display:inline-block;">
+        <a class="btn primary" href="https://www.youtube.com/@ibnesabidsaikat4174" target="_blank" rel="noopener" style="margin-top:20px;display:inline-block;">
           Watch on YouTube →
         </a>
       </div>
@@ -299,24 +486,6 @@
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- FIELD NOTES -->
-  <section class="reveal">
-    <div class="section-head">
-      <h2 class="section-title">Field Notes</h2>
-      <span class="section-tag">// on set, on site</span>
-    </div>
-    <div class="snap-grid">
-      <figure class="snap">
-        <img src="studio-recording.jpg" alt="Recording a Cloud Engineering session">
-        <figcaption><span class="dot"></span>Recording a Cloud Engineering session</figcaption>
-      </figure>
-      <figure class="snap">
-        <img src="microsoft-visit.jpg" alt="Microsoft office visit">
-        <figcaption><span class="dot"></span>Visiting the Microsoft office</figcaption>
-      </figure>
     </div>
   </section>
 
@@ -382,267 +551,7 @@
     </div>
   </section>
 
-  <!-- DEPLOY LOG -->
-  <section id="projects" class="reveal">
-    <div class="section-head">
-      <h2 class="section-title">Deploy Log</h2>
-      <span class="section-tag">// 30 projects · full write-ups on Medium</span>
-    </div>
-
-    <div class="log-controls">
-      <button class="filt active" data-filter="all">All</button>
-      <button class="filt" data-filter="ai">AI / MLOps</button>
-      <button class="filt" data-filter="k8s">Kubernetes</button>
-      <button class="filt" data-filter="azure">Azure</button>
-      <button class="filt" data-filter="cicd">CI/CD</button>
-      <button class="filt" data-filter="infra">Infrastructure</button>
-    </div>
-
-    <div class="log" id="project-list">
-      <div class="log-row" data-cat="ai k8s">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">AI-Powered Kubernetes Self-Healing System <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Auto-detect and heal failed pods using AI + Python on K3s</div>
-        </div>
-        <div class="log-tag">K3s · Flask · Azure</div>
-      </div>
-      <div class="log-row" data-cat="ai k8s">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">PredictOps — AI Predictive Auto-Scaling <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">ML-based predictive scaling for Kubernetes workloads</div>
-        </div>
-        <div class="log-tag">K8s · AI · Azure</div>
-      </div>
-      <div class="log-row" data-cat="ai">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">AlertSense — AI Alert Correlation Engine <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Reduce alert fatigue with intelligent correlation</div>
-        </div>
-        <div class="log-tag">Python · AI · Monitoring</div>
-      </div>
-      <div class="log-row" data-cat="ai">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">AI Meets DevOps — Kubernetes via Amazon Q <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">No-code Kubernetes deployment using Amazon Q</div>
-        </div>
-        <div class="log-tag">Amazon Q · K8s</div>
-      </div>
-      <div class="log-row" data-cat="ai">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">AI-Driven Predictive Analytics Platform <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">End-to-end MLOps pipeline on Azure</div>
-        </div>
-        <div class="log-tag">MLOps · Azure · Python</div>
-      </div>
-      <div class="log-row" data-cat="ai">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">AI-Powered Resume Analyzer with Azure OpenAI <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Real-time Streamlit app with Azure OpenAI</div>
-        </div>
-        <div class="log-tag">Streamlit · Azure OpenAI</div>
-      </div>
-      <div class="log-row" data-cat="ai">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">Real-Time Weather Forecast Bot <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Azure OpenAI powered weather assistant</div>
-        </div>
-        <div class="log-tag">Python · Azure OpenAI</div>
-      </div>
-      <div class="log-row" data-cat="ai">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">AI-Powered Image Analysis Web App <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Flask + Azure Computer Vision</div>
-        </div>
-        <div class="log-tag">Flask · Azure · Python</div>
-      </div>
-      <div class="log-row" data-cat="ai">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">AI Anomaly Detection on AKS <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Real-time anomaly detection with MicroK8s</div>
-        </div>
-        <div class="log-tag">AKS · MicroK8s · Azure</div>
-      </div>
-      <div class="log-row" data-cat="ai">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">Creating an MCP Server <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Model Context Protocol server implementation</div>
-        </div>
-        <div class="log-tag">MCP · AI</div>
-      </div>
-      <div class="log-row" data-cat="ai">
-        <div class="log-icon ai">AI</div>
-        <div class="log-content">
-          <div class="log-title">AIDevOps-X! <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">AI-powered DevOps automation suite</div>
-        </div>
-        <div class="log-tag">AI · DevOps</div>
-      </div>
-      <div class="log-row" data-cat="k8s azure">
-        <div class="log-icon k8s">K8s</div>
-        <div class="log-content">
-          <div class="log-title">CI/CD with Kubernetes, Argo CD &amp; Dashboard <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Full GitOps pipeline on Azure VM</div>
-        </div>
-        <div class="log-tag">Argo CD · K8s · Azure</div>
-      </div>
-      <div class="log-row" data-cat="k8s">
-        <div class="log-icon k8s">K8s</div>
-        <div class="log-content">
-          <div class="log-title">Real-Time Voting App with Grafana &amp; Prometheus <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Observability stack with live metrics</div>
-        </div>
-        <div class="log-tag">K8s · Prometheus · Grafana</div>
-      </div>
-      <div class="log-row" data-cat="k8s">
-        <div class="log-icon k8s">K8s</div>
-        <div class="log-content">
-          <div class="log-title">Horizontal Pod Autoscaler (HPA) <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Dynamic scaling based on CPU utilization</div>
-        </div>
-        <div class="log-tag">K8s · HPA</div>
-      </div>
-      <div class="log-row" data-cat="k8s azure">
-        <div class="log-icon k8s">K8s</div>
-        <div class="log-content">
-          <div class="log-title">Microservices App on AKS <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Production-ready microservices architecture</div>
-        </div>
-        <div class="log-tag">AKS · Microservices</div>
-      </div>
-      <div class="log-row" data-cat="k8s azure">
-        <div class="log-icon k8s">K8s</div>
-        <div class="log-content">
-          <div class="log-title">Enterprise App with Kubernetes + Helm <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Helm charts + Linux servers on Azure</div>
-        </div>
-        <div class="log-tag">Helm · K8s · Azure</div>
-      </div>
-      <div class="log-row" data-cat="k8s">
-        <div class="log-icon k8s">K8s</div>
-        <div class="log-content">
-          <div class="log-title">Scalable Reddit Clone on Kubernetes <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Docker + Minikube deployment</div>
-        </div>
-        <div class="log-tag">Docker · K8s · Minikube</div>
-      </div>
-      <div class="log-row" data-cat="azure cicd">
-        <div class="log-icon cicd">CI</div>
-        <div class="log-content">
-          <div class="log-title">DevOps Suite: Jenkins + Docker + K8s on Azure <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Complete automation pipeline</div>
-        </div>
-        <div class="log-tag">Jenkins · Docker · Azure</div>
-      </div>
-      <div class="log-row" data-cat="cicd">
-        <div class="log-icon cicd">CI</div>
-        <div class="log-content">
-          <div class="log-title">Real-Time CI/CD Pipeline with Jenkins <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Automated build, test and deploy</div>
-        </div>
-        <div class="log-tag">Jenkins · CI/CD</div>
-      </div>
-      <div class="log-row" data-cat="cicd">
-        <div class="log-icon cicd">CI</div>
-        <div class="log-content">
-          <div class="log-title">DevOps without Dockerfile using Buildpacks <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Cloud Native Buildpacks workflow</div>
-        </div>
-        <div class="log-tag">Buildpacks · CI/CD</div>
-      </div>
-      <div class="log-row" data-cat="azure infra">
-        <div class="log-icon azure">Az</div>
-        <div class="log-content">
-          <div class="log-title">Automated Azure Infra with Terraform <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Production-ready, secure &amp; scalable</div>
-        </div>
-        <div class="log-tag">Terraform · Azure</div>
-      </div>
-      <div class="log-row" data-cat="azure infra">
-        <div class="log-icon azure">Az</div>
-        <div class="log-content">
-          <div class="log-title">ZeroTouch Azure Deployment <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Fully automated infrastructure provisioning</div>
-        </div>
-        <div class="log-tag">Terraform · Azure</div>
-      </div>
-      <div class="log-row" data-cat="azure infra">
-        <div class="log-icon azure">Az</div>
-        <div class="log-content">
-          <div class="log-title">HA Web App with Docker + Nginx LB on Azure <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">High availability load-balanced setup</div>
-        </div>
-        <div class="log-tag">Docker · Nginx · Azure</div>
-      </div>
-      <div class="log-row" data-cat="azure">
-        <div class="log-icon azure">Az</div>
-        <div class="log-content">
-          <div class="log-title">Static Website on Azure Blob Storage <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Cost-optimized static hosting</div>
-        </div>
-        <div class="log-tag">Azure Blob · Static</div>
-      </div>
-      <div class="log-row" data-cat="azure">
-        <div class="log-icon azure">Az</div>
-        <div class="log-content">
-          <div class="log-title">Portfolio Hosting on Azure App Service <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Fully managed web app deployment</div>
-        </div>
-        <div class="log-tag">Azure App Service</div>
-      </div>
-      <div class="log-row" data-cat="azure">
-        <div class="log-icon azure">Az</div>
-        <div class="log-content">
-          <div class="log-title">Serverless API with Azure Functions <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Event-driven serverless architecture</div>
-        </div>
-        <div class="log-tag">Azure Functions</div>
-      </div>
-      <div class="log-row" data-cat="azure">
-        <div class="log-icon azure">Az</div>
-        <div class="log-content">
-          <div class="log-title">End-to-End Data Solution with Microsoft Fabric <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Complete analytics platform</div>
-        </div>
-        <div class="log-tag">Microsoft Fabric</div>
-      </div>
-      <div class="log-row" data-cat="azure">
-        <div class="log-icon azure">Az</div>
-        <div class="log-content">
-          <div class="log-title">Azure Activity Log Alerts <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Real-time monitoring and response</div>
-        </div>
-        <div class="log-tag">Azure Monitor</div>
-      </div>
-      <div class="log-row" data-cat="azure">
-        <div class="log-icon azure">Az</div>
-        <div class="log-content">
-          <div class="log-title">Chatbot with Microsoft Azure Portal <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Built entirely via Azure Portal</div>
-        </div>
-        <div class="log-tag">Azure · Chatbot</div>
-      </div>
-      <div class="log-row" data-cat="infra">
-        <div class="log-icon infra">IaC</div>
-        <div class="log-content">
-          <div class="log-title">End-to-End Cloud Infra Automation <span class="medium-tag">Medium</span></div>
-          <div class="log-desc">Terraform + Ansible + GitHub Actions</div>
-        </div>
-        <div class="log-tag">Terraform · Ansible · GitHub Actions</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMMUNITY & CONFERENCES -->
+  <!-- COMMUNITY -->
   <section id="community" class="reveal">
     <div class="section-head">
       <h2 class="section-title">Community &amp; Conferences</h2>
@@ -652,22 +561,22 @@
       <div class="comm-card">
         <div class="comm-badge">AWS</div>
         <div class="comm-title">AWS Community Builder</div>
-        <div class="comm-desc">Selected for the AWS Community Builders program — contributing to the local cloud community.</div>
+        <div class="comm-desc">Selected for the AWS Community Builders program.</div>
       </div>
       <div class="comm-card">
         <div class="comm-badge">Event</div>
         <div class="comm-title">AWS Community Day Bangladesh 2025</div>
-        <div class="comm-desc">Attended the largest AWS community gathering in the region (BRAC University, Dec 2025).</div>
+        <div class="comm-desc">Largest AWS community gathering (BRAC University).</div>
       </div>
       <div class="comm-card">
         <div class="comm-badge">Event</div>
         <div class="comm-title">AWS re:Invent 2025 Recap — Dhaka</div>
-        <div class="comm-desc">Participated in the official re:Invent recap event organised by AWS User Group Bangladesh (Jan 2026).</div>
+        <div class="comm-desc">Official re:Invent recap by AWS User Group Bangladesh.</div>
       </div>
       <div class="comm-card">
         <div class="comm-badge">Event</div>
         <div class="comm-title">Cloud Native Days Dhaka 2026</div>
-        <div class="comm-desc">Joined Bangladesh’s first full-day Cloud Native conference (CNCF supported).</div>
+        <div class="comm-desc">Bangladesh’s first full-day Cloud Native conference.</div>
       </div>
     </div>
   </section>
@@ -700,11 +609,6 @@
         <div class="ep-status"><span class="dot"></span>200 OK</div>
       </div>
       <div class="endpoint">
-        <div class="verb">MEDIUM</div>
-        <div class="ep-path"><a href="https://medium.com/@ibnesabidsaikat" target="_blank" rel="noopener">medium.com/@ibnesabidsaikat</a></div>
-        <div class="ep-status"><span class="dot"></span>200 OK</div>
-      </div>
-      <div class="endpoint">
         <div class="verb">CV</div>
         <div class="ep-path"><a href="Saikat_CV.pdf" target="_blank" rel="noopener">Download My CV (PDF)</a></div>
         <div class="ep-status"><span class="dot"></span>200 OK</div>
@@ -722,10 +626,49 @@
 </footer>
 
 <script>
-  // Name word-by-word
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  const follower = document.getElementById('cursor-follower');
+  let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+  });
+
+  function animateFollower() {
+    followerX += (mouseX - followerX) * 0.15;
+    followerY += (mouseY - followerY) * 0.15;
+    follower.style.left = followerX + 'px';
+    follower.style.top = followerY + 'px';
+    requestAnimationFrame(animateFollower);
+  }
+  animateFollower();
+
+  // Theme toggle
+  const themeToggle = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  html.setAttribute('data-theme', savedTheme);
+  updateThemeIcon(savedTheme);
+
+  themeToggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeIcon(next);
+  });
+
+  function updateThemeIcon(theme) {
+    themeToggle.querySelector('.theme-icon').textContent = theme === 'dark' ? '☀' : '☾';
+  }
+
+  // Name typing
   const nameWords = ["Ibne", "Sabid", "Saikat"];
-  let nameIndex = 0;
-  let nameChar = 0;
+  let nameIndex = 0, nameChar = 0;
   const nameEl = document.getElementById('name-word');
 
   function typeName() {
@@ -758,9 +701,7 @@
     "Azure Infrastructure Engineer",
     "Kubernetes & MLOps Engineer"
   ];
-  let roleIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
+  let roleIndex = 0, charIndex = 0, isDeleting = false;
   const typedEl = document.getElementById('typed-text');
 
   function typeRole() {
@@ -799,14 +740,14 @@
 
   // Filter
   const filters = document.querySelectorAll('.filt');
-  const rows = document.querySelectorAll('.log-row');
+  const cards = document.querySelectorAll('.project-card');
   filters.forEach(btn => {
     btn.addEventListener('click', () => {
       filters.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const filter = btn.dataset.filter;
-      rows.forEach(row => {
-        row.style.display = (filter === 'all' || row.dataset.cat.includes(filter)) ? 'grid' : 'none';
+      cards.forEach(card => {
+        card.style.display = (filter === 'all' || card.dataset.cat.includes(filter)) ? 'flex' : 'none';
       });
     });
   });
