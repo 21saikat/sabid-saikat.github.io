@@ -152,16 +152,17 @@ h1.name {
   border-color: var(--accent); color: var(--accent); transform: translateY(-1px);
 }
 
+/* Profile photo — full image visible (contain) */
 .hero-photo img {
   width: 100%;
   aspect-ratio: 3/4;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center center;
   border-radius: 12px;
   border: 1px solid var(--line);
   display: block;
   box-shadow: 0 0 0 1px rgba(56,189,248,0.08), 0 20px 40px -20px rgba(0,0,0,0.5);
-  background: var(--surface);
+  background: var(--surface-2);
 }
 .hero-photo-tag {
   display: flex; align-items: center; gap: 7px;
